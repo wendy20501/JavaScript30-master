@@ -25,7 +25,7 @@ flexbox 教學：http://sweeteason.pixnet.net/blog/post/42781628-css-flexbox-lay
         flex: 1; // 將panels區塊平分 (1 : 1 : 1 : 1 : 1)
     }
 
-2. 將文字置中(CSS code)
+2.將文字置中(CSS code)
 
     .panel {
         background:#6B0F9C;
