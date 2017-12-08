@@ -1,7 +1,7 @@
 Practice Array methods!
 
 1.Filter the list of inventors for those who were born in the 1500's
-Array.prototype.filter()
+      Array.prototype.filter()
 
       三種不同的寫法：
       1)
@@ -22,7 +22,7 @@ Array.prototype.filter()
       console.table(fifteen); // 在console中印出table格式
       
 2.Give us an array of the inventors' first and last names
-Array.prototype.map()
+      Array.prototype.map()
 
       兩種不同的寫法：
       1)
@@ -37,7 +37,7 @@ Array.prototype.map()
       console.log(fullnames);
 
 3.Sort the inventors by birthdate, oldest to youngest
-Array.prototype.sort()
+      Array.prototype.sort()
 
     兩種不同的寫法：
     1)
@@ -55,7 +55,7 @@ Array.prototype.sort()
     console.table(ordered);
 
 4.How many years did all the inventors live?
-Array.prototype.reduce()
+      Array.prototype.reduce()
 
     const totalYears = inventors.reduce((total, inventor) => {
         return total + (inventor.passed - inventor.year);
@@ -82,7 +82,8 @@ https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris         // 在該url�
                     .filter(streetName => streetName.includes('de'));
 
 7.sort Exercise
-Sort the people alphabetically by last name
+      Sort the people alphabetically by last name
+      
     兩種不同的寫法：
     1)
         const alpha = people.sort(function(lastOne, nextOne) {
@@ -101,7 +102,7 @@ Sort the people alphabetically by last name
     console.log(alpha);
 
 8.Reduce Exercise
-Sum up the instances of each of these
+      Sum up the instances of each of these
 
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
     const transportation = data.reduce(function(obj, item) {
