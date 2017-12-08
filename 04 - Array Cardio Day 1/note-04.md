@@ -1,7 +1,7 @@
 Practice Array methods!
 
-Array.prototype.filter()
 1.Filter the list of inventors for those who were born in the 1500's
+Array.prototype.filter()
 
       三種不同的寫法：
       1)
@@ -21,8 +21,8 @@ Array.prototype.filter()
 
       console.table(fifteen); // 在console中印出table格式
       
-Array.prototype.map()
 2.Give us an array of the inventors' first and last names
+Array.prototype.map()
 
       兩種不同的寫法：
       1)
@@ -36,8 +36,8 @@ Array.prototype.map()
 
       console.log(fullnames);
 
-Array.prototype.sort()
 3.Sort the inventors by birthdate, oldest to youngest
+Array.prototype.sort()
 
     兩種不同的寫法：
     1)
@@ -54,8 +54,8 @@ Array.prototype.sort()
 
     console.table(ordered);
 
-Array.prototype.reduce()
 4.How many years did all the inventors live?
+Array.prototype.reduce()
 
     const totalYears = inventors.reduce((total, inventor) => {
         return total + (inventor.passed - inventor.year);
@@ -64,6 +64,7 @@ Array.prototype.reduce()
     console.log(totalYears);
 
 5.Sort the inventors by years lived
+
     const oldest = inventors.sort(function(a, b) {
         const lastGuy = a.passed - a.year;
         const nextGuy = b.passed - b.year;
