@@ -1,4 +1,5 @@
-1. 用css改變物件外觀：
+1.用css改變物件外觀：
+
     .playing {
       transform: scale(1.1);     //放大1.1倍
       border-color: #ffc600;
@@ -21,18 +22,21 @@
 
     CSS3 transitions allows you to change property values smoothly (from one value to another), over a given duration.
 
-2. 取得KeyCode的網站：http://keycode.info/
+2.取得KeyCode的網站：http://keycode.info/
 
-3.  HTML data-* Attributes
+3.HTML data-* Attributes
+
     The data-* attributes gives us the ability to embed custom data attributes on all HTML elements.
 
-4. Listening up for key event
+4.Listening up for key event
+
     window.addEventListener('keydown', function(e){
     ...
     });
     // e為event
 
-5. Is there an audio element has data-key=65?
+5.Is there an audio element has data-key=65?
+
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
     // document.querySelector: Returns the first Element within the document that matches the specified selector, or group of selectors, or null if no matches are found.
 
@@ -42,18 +46,21 @@
     Template literals: Template literals are enclosed by the back-tick (` `)  (grave accent) character instead of double or single quotes. Template literals can contain placeholders. These are indicated by the dollar sign and curly braces (${expression}). The expressions in the placeholders and the text between them get passed to a function. The default function just concatenates the parts into a single string. If there is an expression preceding the template literal (tag here),  the template string is called "tagged template literal". In that case, the tag expression (usually a function) gets called with the processed template literal, which you can then manipulate before outputting. To escape a back-tick in a template literal, put a backslash \ before the back-tick.
 
 6.Play audio
+
     如果只用audio.play();會發生一個問題：在audio還沒播完前再次執行play的話會沒有反應（不會從頭播放）
     => 加 audio.currentTime = 0; 在前面, 手動從頭播
 
 7.Is there any key element has data-key=65?
+
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 
 8.Add class to the element
+
     key.classList.add('playing'); 相當於jQuery的語法 key.addClass('playing');
 
 9.Remove class to the element
-    兩種做法：
 
+    兩種做法：[
     - setTimeout(function() {
     -       // remove class here
     }, 0.07);
