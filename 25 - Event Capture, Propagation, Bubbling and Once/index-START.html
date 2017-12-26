@@ -39,7 +39,21 @@
 
 <button></button>
 <script>
-
+    const divs = document.querySelectorAll('div');
+    
+    function logText(e) {
+        console.log(this.classList.value); // bubbling
+        //e.stopPropagation(); // click 'three' then just show 'three'
+        
+        // capture from top down
+        // trigger events bubble up
+    }
+    
+    divs.forEach(div => div.addEventListener('click', logText, {
+        capture: false, // trigger logText while capture down
+        once: true // listen for a click and unbind itself => no future click events
+    })); // third parameter: option object 
+    
 </script>
 </body>
 </html>
